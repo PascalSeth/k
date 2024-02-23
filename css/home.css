@@ -1,0 +1,579 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+    font-size: 13px;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.5;
+    
+  }
+  
+  a {
+    text-decoration: none;
+    color: #36c;
+  }
+  
+  .header {
+    margin: 55px auto 5px;
+    text-align: center;
+    width: 270px;
+  }
+  
+  .sprite {
+    background-image: url('https://www.wikipedia.org/portal/wikipedia.org/assets/img/sprite-46c49284.svg');
+    display: inline-block;
+    color: black;
+  }
+  
+  .header .title {
+    margin: 12px auto;
+    font-weight: bold;
+    font-family: 'Lora', serif;
+  }
+  
+  .header .title .title_image {
+    display: inline-block;
+    width: 176px;
+    height: 32px;
+    background-position: 0 -254px;
+    /* color: transparent; */
+  }
+  
+  .header .title .title_text {
+    display: inline-block;
+    font-size: 15px;
+    font-family: 'Lora', serif;
+    font-weight: 400;
+    line-height: 33px;
+  }
+  
+  main {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 48px;
+  }
+  
+  hr {
+    margin: 0 10px;
+  }
+  
+  main .article ul {
+    position: relative;
+    display: block;
+    margin: auto;
+    width: 546px;
+    height: 325px;
+  }
+  
+  main .article ul .article_item {
+    background-color: white;
+    position: absolute;
+    list-style: none;
+    line-height: 21px;
+    width: 156px;
+    text-align: center;
+    cursor: pointer;
+  }
+  
+  main .article ul img{
+    width: 200px;
+    position: absolute;
+    top: 64px;
+    left: 180px;
+  }
+  
+  ul .article_item .item_language {
+    display: block;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 1px;
+  }
+  
+  ul .article_item:hover .item_language{
+    text-decoration: underline;
+  }
+  
+  ul .article_item .item_number {
+    font-size: 13px;
+    color: #54595d;
+  }
+  
+  
+  .lang1 {
+    top: 0;
+    right: 60%;
+  }
+  
+  .lang2 {
+    left: 60%;
+    top: 0;
+  }
+  
+  .lang3 {
+    right: 70%;
+    top: 20%;
+  }
+  
+  .lang4 {
+    left: 70%;
+    top: 20%;
+  }
+  
+  .lang5 {
+    right: 72%;
+    top: 40%;
+  }
+  
+  .lang6 {
+    left: 72%;
+    top: 40%;
+  }
+  
+  .lang7 {
+    right: 70%;
+    top: 60%;
+  }
+  
+  .lang8 {
+    left: 70%;
+    top: 60%;
+  }
+  
+  .lang9 {
+    right: 60%;
+    top: 80%;
+  }
+  
+  .lang10 {
+    left: 60%;
+    top: 80%;
+  }
+  
+  .search {
+    margin: 0px auto 20px;
+    line-height: 21px;
+    width: 540px;
+  }
+
+  .search{
+    margin-top: -34px;
+  }
+  
+  .search fieldset {
+    border: none;
+    text-align: center;
+    padding: 6px 10px 12px;
+    margin: 0;
+    word-spacing: -4px;
+  }
+  
+  .search .search_box {
+    position: relative;
+    width: 73%;
+    line-height: 21px;
+    display: inline-block;
+  }
+  
+  .search_box .box_input {
+    height: 26px;
+    width: 100%;
+    padding: 5px 40px 5px 0px;
+    border: 1px solid #a2a9b1;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    font-stretch: 100%;
+  }
+  
+  .search_box .box_input:hover {
+    border-color: #72777d;
+  }
+  
+  .search_box .box_input:focus {
+    border-color: #36c;
+    box-shadow: inset 0 0 0 1px #36c;
+    outline: 0;
+  }
+  
+  .search_box .box_language {
+    position: absolute;
+    height: 24px;
+    max-width: 95px;
+    top: 12px;
+    right: 32px;
+  }
+  
+  .search_box .box_language label {
+    display: inline-block;
+    color: #54595d;
+    font-size: 13px;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  .search_box .box_language i {
+    background-position: 0 -519px;
+    position: absolute;
+    top: 6px;
+    left: 22px;
+    width: 12px;
+    height: 8px;
+  }
+  
+  .box_language .language_select {
+    position: absolute;
+    top: 0;
+    border: none;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    padding: 0 24px;
+    right: 0;
+    opacity: 0;
+    cursor: pointer;
+  }
+  
+  .language_select option {
+    background-color: red;
+    height: auto;
+    width: auto;
+    font-size: 14px;
+    text-align: left;
+  }
+  
+  .search .search_button {
+    background-color: #36c;
+    border: 1px solid #36c;
+    padding: 8px 16px;
+    position: relative;
+    height: 100%;
+    min-width: 16px;
+    line-height: normal;
+    border-radius: 0 2px 2px 0;
+  }
+  
+  .search_button i {
+    background-position: 0 -697px;
+    text-indent: -9999px;
+    font-size: 16px;
+    font-stretch: 100%;
+    font-weight: 700;
+    height: 22px;
+    width: 22px;
+  }
+  
+  .language .language_button {
+    text-align: center;
+  }
+  
+  .language .language_line {
+    background-color: #c8ccd1;
+    position: relative;
+    height: 1px;
+    width: 80%;
+    max-width: 460px;
+    z-index: -1;
+    margin: -16px auto 0;
+  }
+  
+  .language_button button {
+    background-color: #f8f9fa;
+    padding: 6px 12px;
+    color: #36c;
+    line-height: 14px;
+    font-size: 14px;
+    border: 1px solid #a2a9b1;
+    border-radius: 2px;
+    cursor: pointer;
+    font-weight: 700;
+    outline: 16px solid #fff;
+  }
+  
+  .language_button button:hover {
+    background-color: #fff;
+    border-color: #a2a9b1;
+  }
+  
+  .language_button button:focus {
+    border-color: #36c;
+    box-shadow: inset 0 0 0 1px #36c;
+  }
+  
+  .language_button--A {
+    vertical-align: middle;
+    height: 22px;
+    width: 22px;
+    background-position: 0 -617px;
+  }
+  
+  .language_button--arrow {
+    vertical-align: middle;
+    height: 14px;
+    width: 14px;
+    background-position: 0 -527px;
+  }
+  
+  .language_button--text {
+    vertical-align: middle;
+    margin: 0 6px;
+  }
+  
+  .footer {
+    display: grid;
+    grid-template-columns: 30% 1fr;
+    grid-template-rows: 35% 1fr 30px;
+    grid-row-gap: 10px;
+    grid-column-gap: 50px;
+    color: #54595d;
+    font-weight: normal;
+    /* margin: 50px; */
+    margin: 30px 15px 10px;
+  }
+  
+  .footer_description {
+    align-items: start;
+    padding: 5px;
+  }
+  
+  .footer_description--logo {
+    display: block;
+    position: absolute;
+    height: 44px;
+    width: 44px;
+    background-position: 0 -212px;
+  }
+  
+  .footer_description--paragraph {
+    padding: 0 20px 0 60px;
+    margin: 0;
+  }
+  
+  .footer_description--paragraph a:hover {
+    text-decoration: underline;
+  }
+  
+  .footer_app {
+    background-color: #f8f9fa;
+    padding: 8px 20px 8px 10px;
+  }
+  
+  .footer_app--logo {
+    height: 42px;
+    width: 42px;
+    background-position: 0 -719px;
+    position: absolute;
+    display: block;
+  }
+  
+  .footer_app--text {
+    padding-left: 50px;
+  }
+  
+  .footer_app--text .tittle a:hover {
+    text-decoration: underline;
+  }
+  
+  .footer_app--icons {
+    margin-bottom: 0;
+  }
+  
+  .apps .apps_android {
+    background-position: 0 -541px;
+    height: 38px;
+    width: 124px;
+  }
+  .apps .apps_iOS {
+    height: 38px;
+    width: 124px;
+    background-position: 0 -579px;
+  }
+  
+  .footer_projects {
+    grid-column: 2 / 3;
+    grid-row: 1 / 3;
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  .footer_projects--item {
+    align-self: stretch;
+  }
+  
+  .footer_projects--item a {
+    height: 90px;
+  }
+  
+  .item_icon {
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+  }
+  
+  .item_text {
+    display: inline-block;
+  }
+  
+  .item_text--title {
+    display: block;
+    font-size: 14px;
+  }
+  
+  .item_text--sub {
+    color: #54595d;
+  }
+  
+  
+  .commons {
+    background-position: 0 0;
+    width: 47px;
+    height: 47px;
+  }
+  
+  .wikivoyage {
+    background-position: 0 -446px;
+    height: 36px;
+    width: 36px;
+  }
+  
+  .wiktionary {
+    background-position: 0 -482px;
+    height: 37px;
+    width: 37px;
+  }
+  
+  .wikibooks {
+    background-position: 0 -126px;
+    height: 37px;
+    width: 37px;
+  }
+  
+  .wikinews {
+    background-image: url('https://www.wikipedia.org/portal/wikipedia.org/assets/img/Wikinews-logo_sister@2x.png');
+    background-size: 47px 26px;
+    height: 26px;
+    width: 47px;
+  }
+  
+  .wikidata {
+    background-position: 0 -163px;
+    height: 49px;
+    width: 49px;
+  }
+  
+  .wikiversity {
+    background-position: 0 -409px;
+    height: 37px;
+    width: 43px;
+  }
+  
+  .wikiquote {
+    background-position: 0 -286px;
+    height: 42px;
+    width: 42px;
+  }
+  
+  .mediawiki {
+    background-position: 0 -47px;
+    height: 42px;
+    width: 42px;
+  }
+  
+  .wikisource {
+    background-position: 0 -328px;
+    height: 39px;
+    width: 39px;
+  }
+  
+  .wikispecies {
+    background-position: 0 -367px;
+    height: 42px;
+    width: 42px;
+  }
+  
+  .meta-wiki {
+    background-position: 0 -89px;
+    height: 37px;
+    width: 37px;
+  }
+  
+  .footer_terms {
+    grid-column: 1 / 3;
+  }
+  
+  .footer_terms--text {
+    margin: 0;
+    text-align: center;
+  }
+  
+  .footer_terms--text small {
+    font-size: 13px;
+  }
+  
+  .footer_terms--text small::after {
+    display: inline-block;
+    content: "\2022";
+    margin-left: 8px;
+    margin-right: 5px;
+    font-size: 13px;
+  }
+  
+  .footer_terms--text small:last-child::after {
+    display: inline-block;
+    content: "";
+  }
+  .footer_terms--text small a:hover {
+    text-decoration: underline;
+  }
+  
+  .logo{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 25px;
+    color: #424344;
+  }
+
+  .logo a{
+    color: #424344;
+  }
+
+  header{
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-between;
+    height: 75px;
+    border-bottom: 0.8px solid rgba(158, 158, 160, 0.42);
+  }
+
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0px 54px;
+  gap: 38px;
+  width: 100%;
+}
+.nav_manu{
+  display: flex;
+  gap: 32px;
+  font-weight: 400;
+}
+
+.nav_manu li{
+  list-style: none;
+  text-decoration: none;
+}
+.nav_manu li a{
+  font-size: 15px;
+  color: rgb(75, 75, 75);
+}
+
+.nav_right, .nav_right div{
+  display: flex;
+  gap: 14px;
+  color: white;
+  cursor: default;
+}
+
+.span{
+  color: blue;
+}

@@ -1,0 +1,31 @@
+.cat_card_details{
+    display: flex;
+    gap: 14px;
+    text-transform: uppercase;
+    font-size: 10px;
+    font-weight: 500;
+}
+
+.cat_cards2{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    margin:36px;
+    gap: 24px;
+}
+
+.cat_card2{
+    display: flex;
+    gap: 34px;
+}
+.cat_card2 img{
+    width: 34vw;
+}
+
+.cat_card2_details{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 580px;
+    text-wrap: wrap;
+}
